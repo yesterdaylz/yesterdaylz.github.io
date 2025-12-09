@@ -1,16 +1,15 @@
-/* 整个顶部大背景 */
+/* 顶部大背景 */
 #page-header {
   background: url('/img/B.jpg') no-repeat center center !important;
   background-size: cover !important;
   filter: contrast(1.1) brightness(1.05);
 }
 #page-header::before {
-  backdrop-filter: blur(2px) !important;
-  opacity: 1 !important;
+  backdrop-filter: none !important;
 }
 
 
-/* 导航文字变白加阴影，和你原来的一样 */
+/* 导航文字变白加阴影*/
 #nav a, 
 #nav .site-page {
   color: #ffffff !important;
@@ -18,4 +17,25 @@
 }
 footer {
   background: #1a1a1a !important;
+}
+/*  全站背景（包含两侧空白） */
+body {
+  background: url('/img/B.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+/* 让主题自带的 web_bg 不挡你（不同版本有用） */
+#web_bg {
+  background: transparent !important;
+}
+
+/*  内容卡片半透明白） */
+.card {
+  background: rgba(255,255,255,0.85) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
+}
+
+/* 侧边栏容器半透明一点 */
+#aside-content .card-widget {
+  background: rgba(255,255,255,0.85) !important;
 }
